@@ -10,5 +10,8 @@ public class Testar {
         sel.sort();
         System.out.println("\nVetor ordenado:");
         sel.imprimir();
+        sel.sortDecrescente();
+        System.out.println("\nVetor decrescente:");
+        sel.imprimir();
     }
 }

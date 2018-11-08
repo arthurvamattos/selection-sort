@@ -23,4 +23,20 @@ public class Selection {
             elementos[menor] = aux;
         }
     }
+
+    public void sortDecrescente() {
+        int aux;
+        for (int i = 0; i < elementos.length - 1; i++) {
+            int maior = i;
+            for (int j = i + 1; j < elementos.length; j++) {
+                if (elementos[j] > elementos[maior]) {
+                    maior = j;
+                }
+            }
+            aux = elementos[i];
+            elementos[i] = elementos[maior];
+            elementos[maior] = aux;
+        }
+    }
+
 }
